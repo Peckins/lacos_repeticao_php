@@ -1,0 +1,14 @@
+body{
+    background-image: url('/img/3.jpg');
+    background-repeat: none;
+    background-size: 100%;
+}
+.result{
+    position: relative;
+    overflow-y: scroll;
+    height: 300px;
+}
+.btn-secondary:hover {
+    background-color: blue;
+    color:  white;
+}

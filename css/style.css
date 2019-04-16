@@ -1,0 +1,9 @@
+body{
+    background-image: url('/img/1.png');
+    background-repeat: none;
+    background-size: 100%;
+}
+.menu{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
