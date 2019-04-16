@@ -24,11 +24,11 @@
                             
                             <hr>
                             
-                            <h5 class="text-white">Cálculo fatorial.</h5>
+                            <h5 class="text-white">Números Intermediários.</h5>
                             
-                            <p class="text-white">Efetua o fatorial de um número.</p>
+                            <p class="text-white">Exibe os números intermediários entre um valor e outro.</p>
                             
-                            <button class="btn btn-success btn-block mt-1" data-toggle="modal" data-target="#fatorial">Ir</button>
+                            <button class="btn btn-success btn-block mt-1" data-toggle="modal" data-target="#inter">Ir</button>
                             
                             <br>
                             
@@ -46,24 +46,31 @@
         <!--Fim do corpo-->
         
         <!--Janela ex1-->
-        <div id="fatorial" class="modal fade" role="dialog">
+        <div id="inter" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     
                     <div class="modal-header">
-                        <h4 class="modal-title">Fatorial de um número:</h4>
+                        <h4 class="modal-title">Números Intermediários:</h4>
                     </div>
                     
                     <div class="modal-body">
-                        <form action="/php/ex6.php" method="POST">
+                        <form action="/php/ex7.php" method="POST">
                             <div class="form-group text-center">
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Número</span>
+                                        <span class="input-group-text">Primeiro Valor</span>
                                     </div>
                                     
-                                    <input type="number" class="form-control" name="numero" placeholder="digite um número" aria-label="Default" required>
+                                    <input type="number" class="form-control" name="numero1" placeholder="digite o primeiro número" aria-label="Default" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Último Valor</span>
+                                    </div>
+                                    
+                                    <input type="number" class="form-control" name="numero2" placeholder="digite o último número" aria-label="Default" required>
                                 </div>
                                 
                             </div>

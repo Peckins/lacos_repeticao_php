@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <head>
-        <title>Exercício 2</title>
+        <title>Exercício 6</title>
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/css/ex.css">
         
@@ -20,15 +20,15 @@
                 <div class="col-md-8">
                     <div class="jumbotron bg-primary">
                         <div class="form-group text-center">
-                            <h3 class="text-white">Exercício 2</h3>
+                            <h3 class="text-white">Exercício 6</h3>
                             
                             <hr>
                             
-                            <h5 class="text-white">Mostrar números.</h5>
+                            <h5 class="text-white">Verificar palavras.</h5>
                             
-                            <p class="text-white">Imprimir números na tela onde o limite é definido pelo usuário.</p>
+                            <p class="text-white">Verifica se duas palavras digitadas são iguais ou diferentes.</p>
                             
-                            <button class="btn btn-success btn-block mt-1" data-toggle="modal" data-target="#imprime">Ir</button>
+                            <button class="btn btn-success btn-block mt-1" data-toggle="modal" data-target="#string">Ir</button>
                             
                             <br>
                             
@@ -46,29 +46,36 @@
         <!--Fim do corpo-->
         
         <!--Janela ex1-->
-        <div id="imprime" class="modal fade" role="dialog">
+        <div id="string" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     
                     <div class="modal-header">
-                        <h4 class="modal-title">Imprimir números</h4>
+                        <h4 class="modal-title">Verificar palavras:</h4>
                     </div>
                     
                     <div class="modal-body">
-                        <form action="/php/ex5.php" method="POST">
+                        <form action="/php/ex9.php" method="POST">
                             <div class="form-group text-center">
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Número</span>
+                                        <span class="input-group-text">Primeira palavra</span>
                                     </div>
                                     
-                                    <input type="number" class="form-control" name="numero" placeholder="digite um número" aria-label="Default" required>
+                                    <input type="text" class="form-control" name="palavra1" placeholder="digite a primeira palavra" aria-label="Default" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Segunda palavra</span>
+                                    </div>
+                                    
+                                    <input type="text" class="form-control" name="palavra2" placeholder="digite segunda palavra" aria-label="Default" required>
                                 </div>
                                 
                             </div>
                             
-                            <button type="submit" class="btn btn-success btn-block mt-1">Testar</button>
+                            <button type="submit" class="btn btn-success btn-block mt-1">Verificar</button>
                         </form>
                     </div>
                     
